@@ -1,0 +1,34 @@
+@media screen and (min-width:800px){
+
+    .paddleft{
+        padding-left:150px;
+    }    
+
+    .profilepic{
+        width:20%;
+      }
+
+      .mobilenavi{
+        display: inline-block;
+      }
+
+      .naviline{
+        display: none;
+       }
+
+      .skills{
+        padding-left: 150px;
+        width: 85%;
+        padding-top: 10px;
+        background:#fff;
+      }
+      
+      .tools{
+        padding-left: 140px;      
+    }
+    .popup-content{
+        width: 40%;
+    }
+    
+    
+}

@@ -1,0 +1,108 @@
+@media screen and (max-width:900px){
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        margin-right: 20px;
+        margin-top:auto;
+        margin-bottom: auto;
+        background-color: white;
+      }
+      
+      .bar1, .bar2, .bar3 {   
+            width: 35px;
+            outline: none;
+        height: 5px;
+        background-color:rgb(255 74 74);
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        background-color: #1a8001;
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        background-color: #1a8001;
+      }    
+      .mobilenavi{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 380px;
+        padding-top: 14px;
+        padding-left: 35%;
+        margin-top: 81px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1px;
+        background:#fff;
+        text-align: left;  
+        box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+        animation: mobnavi 0.5s;
+        animation-fill-mode: forwards;
+        }
+        @keyframes  mobnavi {
+            from {top: 0;}
+            to {top: 20px;}
+        }
+        .mobilenavi a{
+            float: right;
+            cursor: pointer;
+            padding: 10px;
+            transition: 0s;
+            color: #919191;
+        }
+        .mobilenavi a:hover{
+            color:#009921;
+            transition: 0s;
+            outline: none;
+            border-radius: 05px;
+        }
+        .naviline{
+            position: relative;
+            width: 800px;    
+            height: 0px;
+            right: 270px;
+            background: transparent;
+            border: 0.1px solid #b9b9b9;
+            opacity: 0.4;
+        }
+
+      .profilepic{
+        width:40%;
+        margin-left: 15px;
+      }
+      .tag{
+        display: inline-grid;
+        width: 82%;
+      }
+      .tools{
+        padding-left: 05px;
+        width: 90%;
+        padding-bottom: 70px;
+        
+    }
+    .toolspic{
+        width: 60%;
+        margin-left: 50px;
+    }
+    .popup-content{
+        width: 85%;
+    }
+            
+
+      
+
+
+
+   
+
+}
