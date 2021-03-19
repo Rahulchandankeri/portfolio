@@ -188,6 +188,7 @@ a{
     margin: 10px;
     padding-bottom: 20px;
     background:#fff;
+    border: 0.1px solid #25242417;
     box-shadow: 0px 3px 6px rgb(181 181 181 / 16%);
 }
 .projectbox{
@@ -310,9 +311,9 @@ a{
 }
 .contactname{
     font-family: 'Source Sans Pro';
-    font-weight: bold;
+    font-weight: 400;
     font-size: larger;
-    letter-spacing: 0em;
+    letter-spacing: 1px;
     line-height: 42px;
     color: #717171;
 }
@@ -330,7 +331,7 @@ a{
     overflow: auto; 
     animation: vpopup ease-in-out 0.5s;
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0 0 0 / 76%);
   }
   @keyframes vpopup{
     from {transform: scale(0)} 
