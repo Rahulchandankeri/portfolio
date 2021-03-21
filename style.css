@@ -198,6 +198,7 @@ a{
     padding: 10px;
     border-radius: 20px;
     background: #fff;
+   transition-timing-function: ease-in-out;
 }
 .projectimg{
     width:100%;
@@ -217,19 +218,17 @@ a{
     text-align: center;
     font-size: x-large;
     font-family: sans-serif;   
-
 }
+
 .btn.demo{
     border: solid 1px rgb(255, 86, 86);
     color: rgb(255, 95, 95);
 }
 .btn.demo:hover{
     background-color:  rgb(255, 86, 86);
-    transition-duration: 0.5s;
     color: rgb(255, 255, 255);
-    transition: ease-in; 
-
 }
+
 .btn.more{
     border: solid 1px rgb(86, 103, 255);
     color: rgb(86, 103, 255);
