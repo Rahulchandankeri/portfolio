@@ -16,7 +16,6 @@
             outline: none;
         height: 5px;
         background-color:rgb(255 74 74);
-          button:focus {outline:0;}
         margin: 6px 0;
         transition: 0s;
       }
