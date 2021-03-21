@@ -3,7 +3,8 @@
     .container {
         display: inline-block;
         cursor: pointer;
-        outline: none;
+        outline: white;
+        color:white;
         margin-right: 20px;
         margin-top:auto;
         margin-bottom: auto;
@@ -16,7 +17,7 @@
         height: 5px;
         background-color:rgb(255 74 74);
         margin: 6px 0;
-        transition: 0.4s;
+        transition: 0s;
       }
       
       .change .bar1 {
