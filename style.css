@@ -58,57 +58,41 @@ a{
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 .aboutme{
+    display: flex;
     position: relative;
-    width: 90%;
-    height:700px;
-    padding-top: 100px;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 0 50px 0 ;
     border-radius: 50px;
-    background:#fff;
+    background: #fff;
     box-shadow: 0px 3px 6px rgb(181 181 181 / 16%);
-    top:180px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: move 1s;
-    animation-fill-mode:forwards;
-}
-@keyframes move {
-    from {top: 0;}
-    o {top: 180px;}
+    top: 180px;
 }
 .workstatus{
     position:absolute; 
-    top: 30px;
-    left: 0px;
+    top: 0;
+    left: 0;
     padding: 07px; 
-    border-radius: 05px;
+    border-radius: 04px;
     background-color: rgb(13, 156, 56);
     color: #ffffff;
     font-family: 'Source Sans Pro';
     font-weight: bold;
     font-size:large;
-    margin-right: 05px;
-    animation-fill-mode: forwards;
-    animation: mymove 2s;
-    animation-delay: 1s;
-    animation-fill-mode:forwards;
+    margin: auto;
 }
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 205px; background-color: rgb(255, 75, 68);}  
-}
+
 .tag{
-    display: inline-flex;   
-    position: relative;
-    float: right;
-    padding: 10px; 
+    float: left;
+    padding: 13px; 
     border-radius: 40px;
     color: white;
     margin: 10px;
     text-align: center;
     font-family: 'Trebuchet MS';
-    font-size: x-large;   
+    font-size: large;   
 }
-.tag.t1{background-color: #0e9e3a;}
+.tag.t1{background-color: #ff673e;}
 .tag.t2{background-color:#9337f9;}
 .tag.t3{background-color:#6e86ff;}
 .tag.t4{background-color:#ff3751;}
