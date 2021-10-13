@@ -1,0 +1,314 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+.profile {
+  width: 80%;
+  margin: 15rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .profile {
+      margin: 10rem auto; } }
+
+.intro {
+  flex-direction: row; }
+  .intro .caption {
+    width: 80%; }
+
+.profile-pic {
+  flex-direction: row; }
+  @media only screen and (max-width: 56.25em) {
+    .profile-pic {
+      margin-top: 2.5rem; } }
+  .profile-pic .profile-img {
+    width: 100%;
+    height: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .profile-pic .profile-img {
+        width: 65%;
+        border: 0.1rem solid #70707042;
+        border-radius: 50%;
+        padding: 0.2rem;
+        box-sizing: content-box; } }
+
+.skills {
+  width: 80%;
+  margin: 15rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .skills {
+      margin: 10rem auto; } }
+
+.skillset {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .skillset {
+      flex-wrap: wrap; } }
+
+.skill {
+  display: flex;
+  font-size: 10rem;
+  flex-wrap: wrap;
+  border: 0.2rem solid #e0e0e0;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .skill {
+      font-size: 8rem;
+      margin-top: 1.5rem; } }
+  .skill:nth-child(1) {
+    color: #f06529; }
+  .skill:nth-child(2) {
+    color: #264de4; }
+  .skill:nth-child(3) {
+    color: #cc6699; }
+  .skill:nth-child(4) {
+    color: #f0db4f; }
+
+.projects {
+  position: relative;
+  width: 80%;
+  margin: 15rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .projects {
+      margin: 10rem auto; } }
+
+.project-container {
+  flex-basis: 25%; }
+  @media only screen and (max-width: 56.25em) {
+    .project-container {
+      margin-top: 2.5rem; } }
+  @media only screen and (max-width: 75em) {
+    .project-container {
+      flex-basis: 30%; } }
+  .project-container .project {
+    border: 0.1rem solid rgba(112, 112, 112, 0.4);
+    padding: 3rem;
+    transition: all 0.4s; }
+    .project-container .project:hover {
+      border: 0.1rem solid rgba(112, 112, 112, 0);
+      box-shadow: 0 1rem 2rem rgba(112, 112, 112, 0.2); }
+    .project-container .project .project-thumbnail {
+      width: 100%;
+      height: auto; }
+  .project-container .caption a:visited,
+  .project-container .caption a:link {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: #707070;
+    letter-spacing: 0.1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .project-container .caption a:visited,
+      .project-container .caption a:link {
+        font-size: 1.6rem; } }
+  .project-container .caption a:hover {
+    color: #db0a5a; }
+
+.loadmore:visited,
+.loadmore:link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #db0a5a;
+  opacity: 0.8;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  padding: 1rem 4rem;
+  transform: translate(-50%);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+  animation: btn 1s linear;
+  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  @media only screen and (max-width: 56.25em) {
+    .loadmore:visited,
+    .loadmore:link {
+      margin-top: 2.5rem; } }
+
+.loadmore:hover {
+  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 1; }
+
+.experience {
+  width: 80%;
+  margin: 15rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .experience {
+      margin: 10rem auto; } }
+
+.contact {
+  position: relative;
+  width: 80%;
+  margin: 15rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .contact {
+      margin: 10rem auto; } }
+
+.contact-type,
+.follow {
+  flex-basis: 50%; }
+  @media only screen and (max-width: 56.25em) {
+    .contact-type,
+    .follow {
+      margin-top: 1.5rem; } }
+  .contact-type .sub-section,
+  .follow .sub-section {
+    display: block;
+    margin-top: 0.2rem; }
+    .contact-type .sub-section a:visited,
+    .contact-type .sub-section a:link,
+    .follow .sub-section a:visited,
+    .follow .sub-section a:link {
+      text-decoration: none;
+      font-weight: 400;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2rem;
+      color: #707070;
+      letter-spacing: 0.1rem; }
+      @media only screen and (max-width: 56.25em) {
+        .contact-type .sub-section a:visited,
+        .contact-type .sub-section a:link,
+        .follow .sub-section a:visited,
+        .follow .sub-section a:link {
+          font-size: 1.6rem; } }
+    .contact-type .sub-section a:hover,
+    .follow .sub-section a:hover {
+      color: #db0a5a; }
+    .contact-type .sub-section .follow-icons,
+    .follow .sub-section .follow-icons {
+      font-size: 2.5rem;
+      color: #211f1f; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 85%; } }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 300; }
+
+.primary-heading {
+  font-size: 2.8rem;
+  color: #707070; }
+
+.secondary-heading {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #707070; }
+
+.tertiary-heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #707070; }
+
+.summary {
+  font-size: 1.8rem; }
+
+@media only screen and (max-width: 29em) {
+  .project-container {
+    flex-basis: auto !important; }
+  .contact-type,
+  .follow {
+    flex-basis: 50% !important; } }
+
+@media only screen and (max-width: 18em) {
+  .skill {
+    font-size: 6rem !important; }
+  .loadmore:visited,
+  .loadmore:link {
+    padding: 1rem 2rem !important; } }
+
+@media only screen and (max-width: 40em) {
+  .contact-type,
+  .follow {
+    flex-basis: auto; } }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.5rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      flex-wrap: wrap; } }
+
+.menu {
+  display: flex; }
+  .menu ul {
+    display: flex;
+    flex-basis: 40%;
+    margin-left: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .menu ul {
+        margin: auto !important; } }
+    .menu ul li {
+      list-style: none;
+      flex-direction: row;
+      margin: 1.5rem;
+      font-size: 1.6rem; }
+      .menu ul li a:visited,
+      .menu ul li a:link {
+        text-decoration: none;
+        font-weight: 400;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        color: #707070;
+        letter-spacing: 0.1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .menu ul li a:visited,
+          .menu ul li a:link {
+            font-size: 1.6rem; } }
+      .menu ul li a:hover {
+        color: #db0a5a; }
+
+.footer {
+  background-color: #f6f6f6;
+  padding: 5rem;
+  text-align: center; }

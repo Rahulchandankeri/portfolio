@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+
+  ul {
+    display: flex;
+    flex-basis: 40%;
+    margin-left: auto;
+
+    @include respond(phone) {
+      margin: auto !important;
+    }
+    li {
+      list-style: none;
+      flex-direction: row;
+      margin: 1.5rem;
+      font-size: 1.6rem;
+
+      @include default-links;
+    }
+  }
+}

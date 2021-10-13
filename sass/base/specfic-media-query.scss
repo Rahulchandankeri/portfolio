@@ -1,0 +1,33 @@
+// Media query for specfic devices/screens
+
+// Screen - 464px
+@media only screen and (max-width: 29em) {
+  .project-container {
+    flex-basis: auto !important;
+  }
+
+  .contact-type,
+  .follow {
+    flex-basis: 50% !important;
+  }
+}
+
+// Screen - //280px
+@media only screen and (max-width: 18em) {
+  .skill {
+    font-size: 6rem !important;
+  }
+
+  .loadmore:visited,
+  .loadmore:link {
+    padding: 1rem 2rem !important;
+  }
+}
+
+// Screen - //680px
+@media only screen and (max-width: 40em) {
+  .contact-type,
+  .follow {
+    flex-basis: auto;
+  }
+}

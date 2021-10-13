@@ -1,0 +1,25 @@
+.contact {
+  position: relative;
+  @include sections;
+}
+
+.contact-type,
+.follow {
+  flex-basis: 50%;
+
+  @include respond(tab-port) {
+    margin-top: $sm-margin-resp;
+  }
+
+  .sub-section {
+    display: block;
+    margin-top: 0.2rem;
+
+    @include default-links;
+
+    .follow-icons {
+      font-size: 2.5rem;
+      color: #211f1f;
+    }
+  }
+}

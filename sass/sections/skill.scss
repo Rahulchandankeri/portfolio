@@ -1,0 +1,38 @@
+.skills {
+  @include sections;
+}
+.skillset {
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+  }
+}
+
+.skill {
+  display: flex;
+  font-size: 10rem;
+  flex-wrap: wrap;
+  border: 0.2rem solid #e0e0e0;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    font-size: 8rem;
+    margin-top: $sm-margin-resp;
+  }
+
+  &:nth-child(1) {
+    color: #f06529;
+  }
+
+  &:nth-child(2) {
+    color: #264de4;
+  }
+  &:nth-child(3) {
+    color: #cc6699;
+  }
+  &:nth-child(4) {
+    color: #f0db4f;
+  }
+}

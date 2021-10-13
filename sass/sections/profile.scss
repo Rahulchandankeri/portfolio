@@ -1,0 +1,31 @@
+.profile {
+  @include sections;
+}
+.intro {
+  flex-direction: row;
+
+  .caption {
+    width: 80%;
+  }
+}
+
+.profile-pic {
+  flex-direction: row;
+
+  @include respond(tab-port) {
+    margin-top: $md-margin-resp;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: auto;
+
+    @include respond(tab-port) {
+      width: 65%;
+      border: 0.1rem solid #70707042;
+      border-radius: 50%;
+      padding: 0.2rem;
+      box-sizing: content-box;
+    }
+  }
+}
