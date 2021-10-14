@@ -4,7 +4,7 @@
 }
 
 .project-container {
-  flex-basis: 25%;
+  flex-basis: 22%;
 
   @include respond(tab-port) {
     margin-top: $md-margin-resp;

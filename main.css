@@ -44,37 +44,37 @@ ORDER: Base + typography > general layout + grid > page layout > components
         box-sizing: content-box; } }
 
 .skills {
+  position: relative;
   width: 80%;
   margin: 15rem auto; }
   @media only screen and (max-width: 56.25em) {
     .skills {
       margin: 10rem auto; } }
 
-.skillset {
-  display: flex;
-  justify-content: space-between; }
-  @media only screen and (max-width: 56.25em) {
-    .skillset {
-      flex-wrap: wrap; } }
-
-.skill {
-  display: flex;
-  font-size: 10rem;
-  flex-wrap: wrap;
-  border: 0.2rem solid #e0e0e0;
-  padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
-    .skill {
-      font-size: 8rem;
-      margin-top: 1.5rem; } }
-  .skill:nth-child(1) {
+.skill-container {
+  flex-basis: 20%; }
+  .skill-container:nth-child(1) {
     color: #f06529; }
-  .skill:nth-child(2) {
+  .skill-container:nth-child(2) {
     color: #264de4; }
-  .skill:nth-child(3) {
+  .skill-container:nth-child(3) {
     color: #cc6699; }
-  .skill:nth-child(4) {
+  .skill-container:nth-child(4) {
     color: #f0db4f; }
+  @media only screen and (max-width: 56.25em) {
+    .skill-container {
+      margin-top: 2.5rem;
+      flex-basis: 30%; } }
+  .skill-container .skill {
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    border: 0.1rem solid #e0e0e0;
+    padding: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .skill-container .skill {
+        font-size: 8rem;
+        margin-top: 1.5rem; } }
 
 .projects {
   position: relative;
@@ -85,7 +85,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       margin: 10rem auto; } }
 
 .project-container {
-  flex-basis: 25%; }
+  flex-basis: 22%; }
   @media only screen and (max-width: 56.25em) {
     .project-container {
       margin-top: 2.5rem; } }
@@ -114,6 +114,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
       .project-container .caption a:visited,
       .project-container .caption a:link {
         font-size: 1.6rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .project-container .caption a:visited,
+      .project-container .caption a:link {
+        font-size: 2.8rem; } }
   .project-container .caption a:hover {
     color: #db0a5a; }
 
@@ -184,6 +188,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
         .follow .sub-section a:visited,
         .follow .sub-section a:link {
           font-size: 1.6rem; } }
+      @media only screen and (min-width: 112.5em) {
+        .contact-type .sub-section a:visited,
+        .contact-type .sub-section a:link,
+        .follow .sub-section a:visited,
+        .follow .sub-section a:link {
+          font-size: 2.8rem; } }
     .contact-type .sub-section a:hover,
     .follow .sub-section a:hover {
       color: #db0a5a; }
@@ -234,10 +244,14 @@ body {
 
 .summary {
   font-size: 1.8rem; }
+  @media only screen and (min-width: 112.5em) {
+    .summary {
+      font-size: 2.8rem; } }
 
 @media only screen and (max-width: 29em) {
-  .project-container {
-    flex-basis: auto !important; }
+  .project-container,
+  .skill-container {
+    flex-basis: 46% !important; }
   .contact-type,
   .follow {
     flex-basis: 50% !important; } }
@@ -305,6 +319,10 @@ body {
           .menu ul li a:visited,
           .menu ul li a:link {
             font-size: 1.6rem; } }
+        @media only screen and (min-width: 112.5em) {
+          .menu ul li a:visited,
+          .menu ul li a:link {
+            font-size: 2.8rem; } }
       .menu ul li a:hover {
         color: #db0a5a; }
 
