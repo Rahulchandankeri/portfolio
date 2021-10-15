@@ -2,16 +2,12 @@
   @include sections;
 }
 .intro {
-  flex-direction: row;
-
   .caption {
     width: 80%;
   }
 }
 
 .profile-pic {
-  flex-direction: row;
-
   @include respond(tab-port) {
     margin-top: $md-margin-resp;
   }

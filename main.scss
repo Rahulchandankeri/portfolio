@@ -2,13 +2,6 @@
 @import "sass/abstracts/mixins";
 @import "sass/abstracts/variables";
 
-// Sections
-@import "sass/sections/profile";
-@import "sass/sections/skill";
-@import "sass/sections/projects";
-@import "sass/sections/experience";
-@import "sass/sections/contact.scss";
-
 // base
 @import "sass/base/base";
 @import "sass/base/typography";
@@ -19,3 +12,10 @@
 @import "sass/layout/grid";
 @import "sass/layout/menu";
 @import "sass/layout/footer";
+
+// Sections
+@import "sass/sections/profile";
+@import "sass/sections/skill";
+@import "sass/sections/projects";
+@import "sass/sections/experience";
+@import "sass/sections/contact.scss";
