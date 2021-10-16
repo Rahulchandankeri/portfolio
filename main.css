@@ -21,12 +21,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
@@ -79,6 +79,7 @@ body {
 
 .summary {
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 112.5em) {
@@ -91,12 +92,12 @@ body {
   .project-container,
   .skill-container {
     -ms-flex-preferred-size: 46% !important;
-    flex-basis: 46% !important;
+        flex-basis: 46% !important;
   }
   .contact-type,
   .follow {
     -ms-flex-preferred-size: 50% !important;
-    flex-basis: 50% !important;
+        flex-basis: 50% !important;
   }
 }
 
@@ -114,7 +115,7 @@ body {
   .contact-type,
   .follow {
     -ms-flex-preferred-size: auto;
-    flex-basis: auto;
+        flex-basis: auto;
   }
 }
 
@@ -147,14 +148,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (max-width: 56.25em) {
   .row {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -167,7 +168,7 @@ body {
 .menu ul {
   display: inherit;
   -ms-flex-preferred-size: 40%;
-  flex-basis: 40%;
+      flex-basis: 40%;
   margin-left: auto;
 }
 
@@ -250,7 +251,7 @@ body {
     border-radius: 50%;
     padding: 0.2rem;
     -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+            box-sizing: content-box;
   }
 }
 
@@ -268,7 +269,7 @@ body {
 
 .skill-container {
   -ms-flex-preferred-size: 20%;
-  flex-basis: 20%;
+      flex-basis: 20%;
 }
 
 .skill-container:nth-child(1) {
@@ -291,7 +292,7 @@ body {
   .skill-container {
     margin-top: 2.5rem;
     -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
+        flex-basis: 30%;
   }
 }
 
@@ -300,8 +301,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 10rem;
   border: 0.1rem solid #e0e0e0;
   padding: 3rem;
@@ -328,7 +329,7 @@ body {
 
 .project-container {
   -ms-flex-preferred-size: 22%;
-  flex-basis: 22%;
+      flex-basis: 22%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -340,7 +341,7 @@ body {
 @media only screen and (max-width: 75em) {
   .project-container {
     -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
+        flex-basis: 30%;
   }
 }
 
@@ -354,7 +355,7 @@ body {
 .project-container .project:hover {
   border: 0.1rem solid rgba(112, 112, 112, 0);
   -webkit-box-shadow: 0 1rem 2rem rgba(112, 112, 112, 0.2);
-  box-shadow: 0 1rem 2rem rgba(112, 112, 112, 0.2);
+          box-shadow: 0 1rem 2rem rgba(112, 112, 112, 0.2);
 }
 
 .project-container .project .project-thumbnail {
@@ -401,17 +402,16 @@ body {
   left: 50%;
   padding: 1rem 4rem;
   -webkit-transform: translate(-50%);
-  transform: translate(-50%);
+          transform: translate(-50%);
   font-weight: 500;
   font-size: 1.6rem;
   margin-top: 5rem;
   -webkit-animation: btn 1s linear;
-  animation: btn 1s linear;
+          animation: btn 1s linear;
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition: -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
-  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1),
-    -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -425,8 +425,7 @@ body {
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition: -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
-  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1),
-    -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   opacity: 1;
 }
 
@@ -457,7 +456,7 @@ body {
 .contact-type,
 .follow {
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+      flex-basis: 50%;
 }
 
 @media only screen and (max-width: 56.25em) {
