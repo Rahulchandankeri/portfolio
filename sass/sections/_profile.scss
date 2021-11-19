@@ -6,7 +6,10 @@
 }
 
 .profile-pic {
+  width: 20%;
+
   @include respond(tab-port) {
+    width: auto;
     margin-top: $md-margin-resp;
   }
 

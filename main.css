@@ -216,8 +216,13 @@ body {
   width: 70%;
 }
 
+.profile-pic {
+  width: 20%;
+}
+
 @media only screen and (max-width: 56.25em) {
   .profile-pic {
+    width: auto;
     margin-top: 2.5rem;
   }
 }
