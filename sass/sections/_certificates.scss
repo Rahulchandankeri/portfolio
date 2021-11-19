@@ -1,0 +1,12 @@
+.certificates {
+  @include sections;
+
+  .certificate-thumbnail {
+    transition: all 0.2s;
+    border: 0.1rem solid rgba($primary-color, 0.4);
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}

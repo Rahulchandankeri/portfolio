@@ -3,20 +3,23 @@
 }
 
 .project-container {
-  flex-basis: 22%;
+  flex-basis: 26%;
 
-  @include respond(tab-port) {
+  &:nth-child(4) {
     margin-top: $md-margin-resp;
   }
 
-  @include respond(tab-land) {
-    flex-basis: 30%;
+  @include respond(phone) {
+    flex-basis: 70%;
+    margin-top: $md-margin-resp;
   }
 
   .project {
-    border: 0.1rem solid rgba($primary-color, 0.4);
+    border: 0.1rem solid rgba($primary-color,0.1);
+    border-radius: 0.5rem;
     padding: 3rem;
     transition: all 0.4s;
+     box-shadow: 0 .25rem .5rem rgba($primary-color, 0.1);
 
     &:hover {
       border: 0.1rem solid rgba($primary-color, 0);
@@ -31,6 +34,30 @@
 
   .caption {
     @include default-links;
+
+    .read-more {
+      display: none;
+      text-align: center;
+      margin-top: 1.2rem;
+      color: #ffffff;
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      transition: all .1s;
+      border-radius: .2rem;
+      opacity: 1;
+    
+
+      &:hover {
+        background: #fc6666;
+        cursor: pointer;
+      }
+
+
+
+      a{
+        color: #ffffff;
+      }
+    }
   }
 }
 
