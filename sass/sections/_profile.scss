@@ -3,6 +3,10 @@
 }
 .intro {
   width: 70%;
+
+  @include respond(phone) {
+    width: auto;
+  }
 }
 
 .profile-pic {

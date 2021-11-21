@@ -10,7 +10,7 @@
   }
 
   @include respond(phone) {
-    flex-basis: 70%;
+    flex-basis: 50rem;
     margin-top: $md-margin-resp;
   }
 

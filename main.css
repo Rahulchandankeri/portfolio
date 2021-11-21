@@ -82,6 +82,12 @@ body {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .summary {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 29em) {
   .contact-type,
   .follow {
@@ -216,6 +222,12 @@ body {
   width: 70%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .intro {
+    width: auto;
+  }
+}
+
 .profile-pic {
   width: 20%;
 }
@@ -326,8 +338,8 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .project-container {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+    -ms-flex-preferred-size: 50rem;
+        flex-basis: 50rem;
     margin-top: 2.5rem;
   }
 }

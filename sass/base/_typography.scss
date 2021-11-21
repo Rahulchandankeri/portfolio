@@ -20,5 +20,7 @@
 .summary {
   font-size: $default-font-size;
   font-weight: 400;
-
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
