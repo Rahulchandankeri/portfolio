@@ -1,13 +1,16 @@
 {
   "name": "portfolio-2.0",
   "version": "1.0.0",
-  "main": "script.js",
+  "default": "index.html",
   "scripts": {
-    "compile:sass": "node-sass main.scss main.css"
+    "compile:sass": "node-sass main.scss main.css",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "parcel": "^2.1.1",
     "sass": "^1.42.1"
   },
   "devDependencies": {

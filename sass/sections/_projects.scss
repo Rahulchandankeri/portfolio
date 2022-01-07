@@ -3,11 +3,12 @@
 }
 
 .project-container {
-  flex-basis: 26%;
-
-  &:nth-child(4) {
-    margin-top: $md-margin-resp;
-  }
+  width: 35rem;
+  border-radius: 0.2rem;
+  padding: 0 3rem 0 0;
+  margin: 0 3rem 0 0;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
 
   @include respond(phone) {
     flex-basis: 50rem;
@@ -15,20 +16,36 @@
   }
 
   .project {
-    border: 0.1rem solid rgba($primary-color,0.1);
+    position: relative;
+    border: 0.1rem solid rgba($primary-color, 0.1);
     border-radius: 0.5rem;
-    padding: 3rem;
+    padding: 3.5rem 0;
     transition: all 0.4s;
-     box-shadow: 0 .25rem .5rem rgba($primary-color, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba($primary-color, 0.1);
 
     &:hover {
       border: 0.1rem solid rgba($primary-color, 0);
       box-shadow: 0 1rem 2rem rgba($primary-color, 0.2);
     }
+    .latest {
+      text-align: right;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      background: #f97148;
+      padding: 0.25rem 0.9rem;
+      border-radius: 6%;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.07rem;
+    }
 
     .project-thumbnail {
-      width: 100%;
+      width: 50%;
+      display: block;
       height: auto;
+      margin: auto;
     }
   }
 
@@ -42,19 +59,16 @@
       color: #ffffff;
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
-      transition: all .1s;
-      border-radius: .2rem;
+      transition: all 0.1s;
+      border-radius: 0.2rem;
       opacity: 1;
-    
 
       &:hover {
         background: #fc6666;
         cursor: pointer;
       }
 
-
-
-      a{
+      a {
         color: #ffffff;
       }
     }

@@ -1,12 +1,21 @@
 .certificates {
   @include sections;
 
-  .certificate-thumbnail {
-    transition: all 0.2s;
-    border: 0.1rem solid rgba($primary-color, 0.4);
+  .certificate-container {
+    width: 35rem;
+    border-radius: 0.2rem;
+    padding: 0 3rem 0 0;
+    margin: 0 3rem 0 0;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
 
-    &:hover {
-      transform: scale(1.5);
+    .certificate-thumbnail {
+      transition: all 0.2s;
+      border: 0.1rem solid rgba($primary-color, 0.4);
+
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 }

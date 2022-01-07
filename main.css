@@ -139,6 +139,7 @@ body {
 }
 
 .row {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,6 +205,99 @@ body {
   background-color: #f6f6f6;
   padding: 5rem;
   text-align: center;
+}
+
+.container {
+  max-width: 1500px;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 112.5em) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  width: 300px;
+  height: 200px;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #242424;
+  color: #fff;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+}
+
+.btn-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.left-btn {
+  background: transparent;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  border: 0.1rem solid #dbdbdb;
+  left: 0;
+  top: 25%;
+  z-index: 10;
+}
+
+.right-btn {
+  background: transparent;
+  border: 0.1rem solid #dbdbdb;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  right: 0;
+  top: 25%;
+  z-index: 10;
+}
+
+.prevslide,
+.nextslide {
+  background: transparent;
+  border: 0.1px solid #81818114;
+  font-size: 5rem;
+  opacity: 0.9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.prevslide:hover,
+.nextslide:hover {
+  background: #e4e4e4;
+  opacity: 1;
+}
+
+.icon {
+  fill: #444444;
+  height: 3rem;
+  width: 3rem;
 }
 
 .profile {
@@ -328,12 +422,12 @@ body {
 }
 
 .project-container {
-  -ms-flex-preferred-size: 26%;
-      flex-basis: 26%;
-}
-
-.project-container:nth-child(4) {
-  margin-top: 2.5rem;
+  width: 35rem;
+  border-radius: 0.2rem;
+  padding: 0 3rem 0 0;
+  margin: 0 3rem 0 0;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -345,9 +439,10 @@ body {
 }
 
 .project-container .project {
+  position: relative;
   border: 0.1rem solid rgba(112, 112, 112, 0.1);
   border-radius: 0.5rem;
-  padding: 3rem;
+  padding: 3.5rem 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-box-shadow: 0 0.25rem 0.5rem rgba(112, 112, 112, 0.1);
@@ -360,9 +455,25 @@ body {
           box-shadow: 0 1rem 2rem rgba(112, 112, 112, 0.2);
 }
 
+.project-container .project .latest {
+  text-align: right;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background: #f97148;
+  padding: 0.25rem 0.9rem;
+  border-radius: 6%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+}
+
 .project-container .project .project-thumbnail {
-  width: 100%;
+  width: 50%;
+  display: block;
   height: auto;
+  margin: auto;
 }
 
 .project-container .caption a:visited,
@@ -392,9 +503,9 @@ body {
   color: #ffffff;
   padding: 0.5rem 1.5rem;
   background: #fa5252;
-  -webkit-transition: all .1s;
-  transition: all .1s;
-  border-radius: .2rem;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  border-radius: 0.2rem;
   opacity: 1;
 }
 
@@ -531,13 +642,22 @@ body {
   }
 }
 
-.certificates .certificate-thumbnail {
+.certificates .certificate-container {
+  width: 35rem;
+  border-radius: 0.2rem;
+  padding: 0 3rem 0 0;
+  margin: 0 3rem 0 0;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.certificates .certificate-container .certificate-thumbnail {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border: 0.1rem solid rgba(112, 112, 112, 0.4);
 }
 
-.certificates .certificate-thumbnail:hover {
+.certificates .certificate-container .certificate-thumbnail:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }

@@ -1,0 +1,67 @@
+.container {
+  max-width: 1500px;
+  height: auto;
+  overflow: hidden;
+  @include respond(big-desktop) {
+    max-width: 100%;
+  }
+}
+.slider-container {
+  display: flex;
+}
+.slide {
+  width: 300px;
+  height: 200px;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  transition: all 0.9s;
+  display: inline-flex;
+  background: #242424;
+  color: #fff;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.btn-container {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.left-btn {
+  background: transparent;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  border: 0.1rem solid #dbdbdb;
+  left: 0;
+  top: 25%;
+  z-index: 10;
+}
+.right-btn {
+  background: transparent;
+  border: 0.1rem solid #dbdbdb;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  right: 0;
+  top: 25%;
+  z-index: 10;
+}
+.prevslide,
+.nextslide {
+  background: transparent;
+  border: 0.1px solid #81818114;
+  font-size: 5rem;
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+.prevslide:hover,
+.nextslide:hover {
+  background: #e4e4e4;
+  opacity: 1;
+}
+.icon {
+  fill: #444444;
+  height: 3rem;
+  width: 3rem;
+}

@@ -18,3 +18,36 @@
 //     }
 //   }
 // });
+const slide = document.querySelectorAll(".project-container ");
+const nextSlide = document.querySelector(".nextslide");
+const prevSlide = document.querySelector(".prevslide");
+let currentSlide = 0;
+const maxSlide = slide.length;
+let slideIndex;
+
+const goToSlide = function (e) {
+  slide.forEach((currentValue, i) => {
+    currentValue.style.transform = `translateX(${-108 * e}%)`;
+  });
+};
+// -435
+
+// Next Slide
+nextSlide.addEventListener("click", function (e) {
+  if (currentSlide === maxSlide - 2) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  goToSlide(currentSlide);
+});
+
+//Prev Slide
+prevSlide.addEventListener("click", function (e) {
+  if (currentSlide === 0) {
+    currentSlide = maxSlide - 1;
+  } else {
+    currentSlide--;
+  }
+  goToSlide(currentSlide);
+});
