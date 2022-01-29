@@ -88,6 +88,10 @@ body {
   }
 }
 
+.highlight {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 29em) {
   .contact-type,
   .follow {
