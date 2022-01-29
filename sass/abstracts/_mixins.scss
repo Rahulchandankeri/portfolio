@@ -1,7 +1,7 @@
 @mixin sections {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 
   @include respond(tab-port) {
     margin: 10rem auto;

@@ -307,7 +307,7 @@ body {
 .profile {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -356,7 +356,7 @@ body {
 .skills {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -416,7 +416,7 @@ body {
 .projects {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -563,7 +563,7 @@ body {
 .experience {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -575,7 +575,7 @@ body {
 .contact {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -637,7 +637,7 @@ body {
 .certificates {
   position: relative;
   width: 80%;
-  margin: 15rem auto;
+  margin: 12rem auto;
 }
 
 @media only screen and (max-width: 56.25em) {
