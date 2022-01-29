@@ -59,7 +59,7 @@ body {
 .secondary-heading,
 .tertiary-heading,
 .summary {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif, "Segoe UI", Tahoma, Geneva;
   color: #707070;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .secondary-heading {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
