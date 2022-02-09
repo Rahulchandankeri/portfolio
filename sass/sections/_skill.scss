@@ -2,7 +2,7 @@
   @include sections;
 }
 .skill-container {
-  flex-basis: 20%;
+  flex-basis: 1%;
 
   &:nth-child(1) {
     color: #f06529;
@@ -17,9 +17,12 @@
   &:nth-child(4) {
     color: #f0db4f;
   }
+  &:nth-child(5) {
+    color: #61dafb;
+  }
   @include respond(tab-port) {
     margin-top: $md-margin-resp;
-    flex-basis: 30%;
+    flex-basis: 1;
   }
 
   // @include respond(tab-land) {
